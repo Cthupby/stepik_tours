@@ -5,7 +5,10 @@ import random
 
 
 def main_view(request):
-    rand_tours = random.sample(list(tours.values()), 6)
+    rand_tours = random.sample([tour for tour in tours.values()], 6)
+
+    for key, value in tours.items():
+        value['id'] = key
 
     context = {
         "title": title,
