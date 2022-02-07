@@ -26,8 +26,13 @@ SECRET_KEY = 'django-insecure-sgyg1n@*ek!o$@9_i4i+qpu!c)*xl9&kh511' \
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['*']
 STATIC_ROOT = 'static'
+=======
+ALLOWED_HOSTS = ['localhost']
+
+>>>>>>> main
 
 # Application definition
 
@@ -56,7 +61,11 @@ ROOT_URLCONF = 'stepik_tours.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ['templates'],
+=======
+        'DIRS': [],
+>>>>>>> main
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

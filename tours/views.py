@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseNotFound, HttpResponseServerError
+<<<<<<< HEAD
 from .data import title, subtitle, description, departures, tours
 import random
 
@@ -62,6 +63,21 @@ def tour_view(request, tour_id):
         "tour": tour,
     }
     return render(request, "tours/tour.html", context=context)
+=======
+
+
+# Create your views here.
+def main_view(request):
+    return render(request, "tours/index.html")
+
+
+def departure_view(request, departure):
+    return render(request, "tours/departure.html")
+
+
+def tour_view(request, tour_id):
+    return render(request, "tours/tour.html")
+>>>>>>> main
 
 
 def custom_handler404(request, exception):

@@ -1,7 +1,10 @@
 asgiref==3.4.1
 Django==4.0
 flake8==4.0.1
+<<<<<<< HEAD
 gunicorn==20.1.0
+=======
+>>>>>>> main
 mccabe==0.6.1
 pycodestyle==2.8.0
 pyflakes==2.4.0
